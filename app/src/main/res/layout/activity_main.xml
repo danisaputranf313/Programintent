@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="#FFFF"
+                tools:context=".MainActivity">
+    <TextView
+            android:id="@+id/textView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:text="MASUKKAN NILAI MAHASISWA"
+            android:textAlignment="center"
+            android:textSize="18sp" />
+
+    <TextView
+            android:id="@+id/tVnim1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="70dp"
+            android:text="NIM       :"
+            android:textSize="18sp" />
+    <EditText
+            android:id="@+id/txtnim"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tVnim1"
+            android:layout_alignBaseline="@id/tVnim1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="number"
+            android:textSize="18sp" />
+    <TextView
+            android:id="@+id/tVnama1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnim"
+            android:layout_marginLeft="10dp"
+            android:text="Nama    :"
+            android:textSize="18sp" />
+    <EditText
+            android:id="@+id/txtnama"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tVnama1"
+            android:layout_alignBaseline="@id/tVnama1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="text" />
+    <TextView
+            android:id="@+id/tVnilai1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnama"
+            android:layout_marginLeft="10dp"
+            android:text="Nilai       :"
+            android:textSize="18sp" />
+    <EditText
+            android:id="@+id/txtnilai"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/tVnilai1"
+            android:layout_alignBaseline="@id/tVnilai1"
+            android:layout_marginLeft="80dp"
+            android:layout_marginRight="10dp"
+            android:ems="10"
+            android:inputType="number" />
+    <Button
+            android:id="@+id/btnProses"
+            android:layout_width="150sp"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/txtnilai"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:text="PROSES" />
+</RelativeLayout>
